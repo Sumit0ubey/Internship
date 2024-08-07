@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Loading the dataset
-data = pd.read_csv('householdtask3.csv')
+data = pd.read_csv('V:/Coding/Internship/Data Analysis internship/householdtask3.csv')
 
 # Summarizing the data set
 print(data.head(10), '\n')
