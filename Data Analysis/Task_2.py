@@ -4,7 +4,7 @@ TASK - 2: Data Manipulation with Pandas
 
 import pandas as pd
 
-data = pd.read_csv('S:/VS code/Internship/Data Analysis internship/01.Data Cleaning and Preprocessing.csv')
+data = pd.read_csv('V:/Coding/Internship/Data Analysis internship/01.Data Cleaning and Preprocessing.csv')
 
 # Data Summary
 data.info()
