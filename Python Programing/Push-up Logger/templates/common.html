@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% block head %}
+    <title>{% block title %}Push-Ups Logger{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="{{ url_for('static', filename='muscle.ico') }}"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      body{
+        width: 100%;
+        height: 100%;
+        background-image: url("{{ url_for('static', filename='background.jpg') }}");
+        background-size:cover;
+        background-position: center;
+        
+      }
+    </style>
+    {% endblock %}
+  </head>
+
+  <body style="background-color: #ebe9e9;">
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <a class="navbar-brand text-white" href="{{ url_for('welcome') }}">Push-Ups Logger</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a
+              href="{{ url_for('user_workouts') }}"
+              class="btn btn-outline-light"
+              role="button"
+            >Workouts Post</a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="{{ url_for('profile') }}"
+              class="btn btn-outline-light"
+              role="button"
+              style="margin-left: 4px;"
+            >Account</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          {% if current_user.is_authenticated %}
+          <a
+            href="{{ url_for('new_workout') }}"
+            class="btn btn-outline-primary"
+            role="button"
+          >Post New Workout</a>
+          <a
+            href="{{ url_for('logout') }}"
+            class="btn btn-outline-danger"
+            role="button"
+            style="margin-left: 4px;"
+          >Log Out</a>
+          {% else %}
+          <a
+            href="{{ url_for('signup') }}"
+            class="btn btn-outline-primary"
+            role="button"
+          >Signup</a>
+          <a
+            href="{{ url_for('login') }}"
+            class="btn btn-outline-primary"
+            role="button"
+            style="margin-left: 4px;"
+          >Login</a>
+          {% endif %}
+        </form>
+      </div>
+    </nav>
+    </header>
+
+    <main class="container my-5">
+      {% block body %} {% endblock %}
+    </main>
+    
+    <footer class="bg-dark text-center text-white">
+      <div class="container p-4 pb-0">
+        <section class="mb-4">
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.sololearn.com/profile/29903760/?ref=app" role="button" target="_blank">
+            <img src="{{ url_for('static', filename='sololearn-icons.png') }}" title="SoloLearn" style="width: 20px; height: 21px;">
+        </a>
+
+          <a class="btn btn-outline-light btn-floating m-1" href="https://t.me/OreWaM0nkeyDLuffy" role="button", title="Telegram">
+            <i class="fab fa-telegram"></i>
+          </a>
+
+          <a class="btn btn-outline-light btn-floating m-1" href="https://wa.me/9823735538" role="button", title="Whatsapp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+
+          <a class="btn btn-outline-light btn-floating m-1" href="mailto:dubeysumit378@gmail.com" role="button", title="Gmail">
+            <i class="fab fa-google"></i>
+          </a>
+
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/sumit-dubey-8762802a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" role="button", title="linkedin">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+
+          <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Sumit0ubey" target="_blank" role="button", title="Github">
+            <i class="fab fa-github"></i>
+          </a>
+        </section>
+      </div>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2024 Copyright:
+        <a class="text-white" href="https://sumit0ubey.github.io/My_Portfolios/" target="_blank">Sumit Dubey</a>
+      </div>
+    </footer>
+  </body>
+</html>
