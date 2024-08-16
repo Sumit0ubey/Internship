@@ -1,0 +1,2 @@
+Tkinter == included with standard Python installation
+sqlite3==3.41.2 
