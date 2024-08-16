@@ -76,7 +76,9 @@ To get started with the Push-up Logger, follow these steps:
 5. Install the required dependencies:
     pip install -r requirements.txt
 
-
 ● Usage
 To start logging push-ups, run the main script:
 python main.py
+
+● License:
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
