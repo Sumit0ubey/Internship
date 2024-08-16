@@ -60,9 +60,13 @@ Grade_Tracker Class
 The results are saved to `studentgradefile.csv` with the following format:
 
 Student name: [Student Name]
+
 Subject-grade: [Subject Grades Dictionary]
+
 Overall Grade: [Overall Grade]
+
 Percentage: [Percentage]
+
 GPA: [GPA]
 
 Feel free to adjust or modify Student grade tracker as you see fit!
