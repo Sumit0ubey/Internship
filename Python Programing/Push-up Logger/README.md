@@ -14,26 +14,47 @@ It provides an easy-to-use interface to record the number of push-ups performed 
 ● Structure:
 
 Push-up Logger
+
 ├── instance
+
 │ └── db.sqlite
+
 ├── static
+
 │ ├── background.jpg
+
 │ ├── Muscle.ico
+
 │ ├── Profile_pic.png
+
 │ ├── push-ups.gif
+
 │ └── sololearn.png
+
 ├── templates
+
 │ ├── common.html
+
 │ ├── index.html
+
 │ ├── signup.html
+
 │ ├── Profile.html
+
 │ ├── Postfeed.html
+
 │ ├── login.html
+
 │ ├── createworkout.html
+
 │ ├── updateworkout.html
+
 │ └── allworkouts.html
+
 ├── create_db.py
+
 ├── main.py
+
 └── requirements.txt
 
 
