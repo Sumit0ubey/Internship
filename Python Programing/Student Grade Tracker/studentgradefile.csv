@@ -1,13 +1,11 @@
-Student Name,Percentage,GPA
-Navneet Dubey,93.25,4.6625
-English,94
-Maths,96
-Science,97
-Marathi,86
+Student name: Navneet dubey 
+ Subject-grade: {'English': 94, 'Maths': 96, 'Science': 97, 'Marathi': 86} 
+ Overall Grade: A+ 
+ Percentage: 93.25 
+ GPA: 4.6625
 
-Stayam Mishra,93.8,4.69
-Python,94
-Operating System,93
-Computer network,98
-Mathematics and analysis,94
-DBMS,90
+Student name: Stayam Mishra 
+ Subject-grade: {'Python': 94, 'Operating System': 93, 'Computer network': 98, 'Mathematics and analysis': 94, 'DBMS': 90} 
+ Overall Grade: A+ 
+ Percentage: 93.8 
+ GPA: 4.6899999999999995
