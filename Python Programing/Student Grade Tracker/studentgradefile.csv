@@ -1,10 +1,13 @@
-Student Name,Subject,Grade,Overall Grade,Percentage,GPA
-Navneet Dubey,English,94,A+,93.25,4.6625
-Navneet Dubey,Maths,96,A+,93.25,4.6625
-Navneet Dubey,Science,97,A+,93.25,4.6625
-Navneet Dubey,Marathi,86,A+,93.25,4.6625
-Stayam Mishra,Python,94,A+,93.8,4.69
-Stayam Mishra,Operating System,93,A+,93.8,4.69
-Stayam Mishra,Computer network,98,A+,93.8,4.69
-Stayam Mishra,Mathematics and analysis,94,A+,93.8,4.69
-Stayam Mishra,DBMS,90,A+,93.8,4.69
+Student Name,Percentage,GPA
+Navneet Dubey,93.25,4.6625
+English,94
+Maths,96
+Science,97
+Marathi,86
+
+Stayam Mishra,93.8,4.69
+Python,94
+Operating System,93
+Computer network,98
+Mathematics and analysis,94
+DBMS,90
