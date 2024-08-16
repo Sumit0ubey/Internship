@@ -14,7 +14,7 @@ It provides an easy-to-use interface to record the number of push-ups performed 
   - User-friendly command-line interface
 
 
-● Structure:
+● Project Structure:
 
 Push-up Logger
 
@@ -64,21 +64,23 @@ Push-up Logger
 ● Installation:
 To get started with the Push-up Logger, follow these steps:
 1. Clone the repository:
-    git clone https://github.com/Sumit0ubey/Internship.git
+    `git clone https://github.com/Sumit0ubey/Internship.git`
 
 2. Navigate to the project directory:
-    cd Internship/Python\ Programing/Push-up\ Logger
+    `cd Internship/Python\ Programing/Push-up\ Logger`
    
 4. Set up a virtual environment (optional but recommended):
-    python -m venv venv
-    source venv/bin/activate  # On Windows, use venv\Scripts\activate
+    `python -m venv venv
+    source venv/bin/activate  # On Windows, use venv\Scripts\activate`
 
 5. Install the required dependencies:
-    pip install -r requirements.txt
+    `pip install -r requirements.txt`
 
 ● Usage
 To start logging push-ups, run the main script:
-python main.py
+`python main.py`
 
 ● License:
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+Feel free to reach out if you have any questions or need further assistance.
