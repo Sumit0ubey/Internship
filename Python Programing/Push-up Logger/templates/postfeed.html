@@ -1,0 +1,43 @@
+{% extends "common.html" %} {{ super() }}
+
+{% block title %} Post Feed {% endblock %}
+
+{% block body %}
+
+    {% for post in postfeed %}
+    <dir id="k">
+        <h3> <img src="{{ url_for('static', filename='profile_pic.png') }}" alt="profile_pic"> {{ post['username'] }}</h3>
+        <p><b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Workout: {{ post['workout'] }} push-up </b> <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{ post['Comment'] }}</p>
+        <button class="jsd"><i class="fas fa-thumbs-up"></i></button>
+        <button><i class="fas fa-comment"></i></button>
+    </dir>
+    {% endfor %}
+    <style>
+        #k {
+            height: 25;
+            }
+        
+        h3 img{
+            height: 40px;
+            width: 40px;
+            float: left;
+            }
+        
+        button{
+            background-color: #ebe9e9;
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .jsd{
+            margin-left: 130px;
+        }
+
+        button:hover{
+            background-color: #007BFF;
+        }
+
+    </style>
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends "common.html" %} {{ super() }}
+{% block head %}
+{{ super() }}
+<style>
+    h1,h2,h4,p {
+    font-family: "Arvo", serif;}
+
+    p {
+    font-size: 17px;}
+
+    #imgstyle{
+        float: right;
+        height: 285px;
+        margin-right: 20px;
+    }
+
+    div {
+        margin-left: 12px;
+    }
+</style>
+{% endblock %}
+{% block title %} Pushups | logger {% endblock %}
+
+{% block body %}
+<img src="{{ url_for('static', filename='push-ups.gif') }}" alt="pushup guy" id="imgstyle"/>
+<div>
+<h1>Hello!</h1>
+<p>
+    Welcome to your pushups-logger! <br> This app is designed to help you track and improve your pushup performance. <br> Log your daily pushups, set goals, and monitor your progress over time. Whether you're a beginner or an advanced athlete, our pushups-logger will keep you motivated and on track towards achieving your fitness goals. <br> Let's get started and push towards a stronger, healthier you!
+</p>
+</div>
+
+
+{% endblock %}
