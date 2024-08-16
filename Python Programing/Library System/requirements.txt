@@ -1,0 +1,4 @@
+# Tkinter is included with standard Python installation
+# Include any additional libraries you use in your project
+
+sqlite3==3.41.2 
