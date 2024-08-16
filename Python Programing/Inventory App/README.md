@@ -7,17 +7,15 @@ It provides features for adding, updating, and deleting items, as well as viewin
 
 
 ● Features:
-- Admin Features:
-  - Add new books to the inventory
-  - Update existing book details
-  - Delete books from the inventory
+- Manage Inventory:
+  - Add new items to the inventory
+  - Update existing item details
+  - Delete items from the inventory
+  - View inventory levels and details
 
-- User Features:
-  - Browse available books
-  - Add books to a user's account
-  - Return books and check for any fines
-  - View a history of checked-out books and fines
-
+- User Interface:
+  - Easy-to-use graphical interface built with Tkinter
+ 
 ● Project Structure:
 
 Inventory App
@@ -48,7 +46,7 @@ To set up the Inventory App on your local machine, follow these steps:
 3. Set up a virtual environment (optional but recommended):
     `
     python -m venv venv
-    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+    source venv/bin/activate  # On Windows, use venv\Scripts\activate
     `
 
 4. Install the required dependencies:
