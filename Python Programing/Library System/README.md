@@ -19,10 +19,15 @@ The system also handles user fines for overdue books.
   - View a history of checked-out books and fines
 
 ● Project Structure:
+
 Library Management System
+
 ├── library_Management_System.py
+
 ├── library_database.py
+
 ├── requirements.txt
+
 └── README.md
 
 
