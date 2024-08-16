@@ -26,6 +26,8 @@ Inventory App
 
 ├── requirements.txt
 
+├── LICENSE
+
 └── README.md
 
 
