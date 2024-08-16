@@ -2,14 +2,17 @@
 
 
 ● Overview:
+
 The Push-up Logger is a Python application designed to help users track and log their push-up exercises with the help of Flask. 
 It provides an easy-to-use interface to record the number of push-ups performed each day and visualize progress over time.
+
 
 ● Features:
   - Record daily push-up counts
   - View historical data in a tabular format
   - Generate simple visualizations of progress over time
   - User-friendly command-line interface
+
 
 ● Structure:
 
@@ -72,6 +75,7 @@ To get started with the Push-up Logger, follow these steps:
 
 5. Install the required dependencies:
     pip install -r requirements.txt
+
 
 ● Usage
 To start logging push-ups, run the main script:
