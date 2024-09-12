@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from todo.models import Task
+from .models import Task
 
 class Todoserializer(serializers.ModelSerializer):
     user = serializers.StringRelatedField(read_only=True)
